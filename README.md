@@ -22,6 +22,7 @@ install.packages("lubridate")
 
 The repository includes:
 - `PERISKOPE-TB-replication.R` - the script to run the model
+- `fit_final_github_2020-08-14` - the `rstpm2` model object
 - `input_data.csv` - simulated dataset including 10 example patients
 - `input_data_dictionary.csv` - data dictionary for `input_data.csv`
 - `qfn_lookup` - look-up table to normalise quantitative Quantiferon results to a percentile scale
