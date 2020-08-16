@@ -67,5 +67,5 @@ After reading in the input dataset, the code will perform a number of pre-proces
 # Predictions
 
 - The code will generate 2-year estimates for predicted risk of incident TB. The interval for the predictions can be altered in the code by amending the `studytime` variable (in days).  
-- Note: predictions will be missing for any participants with missing input values (as shown for participant #2 in the input data, where HIV status was missing).
-- For external validation of the PERISKOPE-TB model, we would recommend consideration of multiple imputation to deal with missing data. Please get in touch](mailto:r.gupta@ucl.ac.uk) with us if you would like further advice or to collaborate. 
+- Note: predictions will be missing for any participants with missing required input values (as shown for participant #2 in the input data, where HIV status was missing).
+- For external validation of the PERISKOPE-TB model, we would recommend consideration of multiple imputation to deal with missing data. Please [get in touch](mailto:r.gupta@ucl.ac.uk) if you would like further advice or to collaborate. 
