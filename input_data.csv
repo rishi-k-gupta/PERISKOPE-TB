@@ -1,0 +1,11 @@
+age,qfn_tbag_max,qfn_negative_control,qfn_result,tspot_tbag_max,tspot_negative_control,tspot_result,mantoux_result,contact,indexcase_proximity,indexcase_sputumsmear,migrant,country_of_birth,date_of_entry,hivpos,transplant,ltbi_treatment,test_date
+20,0.090000004,0.090000004,Negative,0,1,Negative,10,Yes,Non-Household,Positive,No,NA,NA,No,No,No,2020-08-14
+35,0.079999998,0.079999998,Negative,1,1,Negative,0,No,Not applicable,NA,Yes,South Africa,01/08/2010,NA,No,No,2020-08-14
+25,1,0.01,Indeterminate,1,1,Negative,12,Yes,Household,Positive,No,NA,NA,No,No,No,2020-08-14
+35,0.08,0.029999999,Negative,1,1,Negative,0,Yes,Household,Negative,No,NA,NA,No,No,No,2020-08-14
+22,NA,NA,NA,NA,NA,NA,15,No,Not applicable,NA,No,NA,NA,No,No,No,2020-08-14
+40,0.170000006,0.150000006,Negative,NA,NA,NA,2,No,Not applicable,NA,Yes,Pakistan,01/01/2017,No,No,No,2020-08-14
+22,4.23999995,0.180000007,Positive,73,1,Positive,20,No,Not applicable,NA,Yes,India,01/01/2015,No,Yes,No,2020-08-14
+56,0.189999998,0.189999998,Negative,NA,1,Indeterminate,15,Yes,Non-Household,Negative,No,NA,NA,No,No,No,2020-08-14
+49,0.069999998,0.039999999,Negative,5,1,Negative,12,Yes,Non-Household,Positive,No,NA,NA,No,No,No,2020-08-14
+18,1.709999993,0.079999998,Positive,9,1,Positive,20,Yes,Household,Positive,No,NA,NA,No,No,No,2020-08-14
