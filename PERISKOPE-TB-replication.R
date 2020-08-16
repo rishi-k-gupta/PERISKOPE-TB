@@ -91,7 +91,7 @@ input_data$year_of_entry <- year(input_data$date_of_entry)
 input_data$year_of_entry[input_data$year_of_entry<2005] <- 2005
 input_data$year_of_entry[input_data$year_of_entry>2018] <- 2018
 
-#### Get TB incidence in country of birth at year of migration (earliest 2005, latest 2017) and replace variable if appropriate
+#### Get TB incidence in country of birth at year of migration (earliest 2005, latest 2018) and replace variable if appropriate
 input_data <- left_join(input_data, country_tb_inc, all.x=T)
 input_data$exposure_cat4b[input_data$e_inc_100k>=100 & input_data$contact=="No"] <- "No contact, migrant"
 
