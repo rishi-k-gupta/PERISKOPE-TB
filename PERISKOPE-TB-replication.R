@@ -121,4 +121,4 @@ predictions <- as.data.frame(100*(predict(fit.final.github, input_data, type="fa
 input_data <- bind_cols(input_data, predictions)
 
 ## The columns 'Estimate', 'lower' and 'upper' indicate 2-year incident TB risk % with lower and upper 95% confidence intervals for each individual
-## Predictions will be missing for any participants with missing input values (as shown for participant #2 in the input data, where HIV status was missing)
+## Predictions will be missing for any participants with missing required input values (as shown for participant #2 in the input data, where HIV status was missing)
