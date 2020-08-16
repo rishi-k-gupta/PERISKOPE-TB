@@ -12,10 +12,10 @@
 The code is run in R and requires the following packages to be installed:
 
 ```
-rstpm2
-tidyverse
-rms
-lubridate
+install.packages("rstpm2")
+install.packages("tidyverse")
+install.packages("rms")
+install.packages("lubridate")
 ```
 
 # Files
