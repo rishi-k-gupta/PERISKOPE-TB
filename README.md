@@ -3,7 +3,7 @@
 # Overview
 
 - This repository provides code required to reconstruct the PERISKOPE-TB prognostic model for incident tuberculosis in settings with low transmission. 
-- Please refer to http://periskope.org and our peer-reviewed publication for full details of the model, including the methods used during development.
+- Please refer to http://periskope.org and our peer-reviewed publication for full details of the model, including the methods used during development and guidance on clinical use.
 - Please [get in touch](mailto:r.gupta@ucl.ac.uk) with us if you would like to collaborate on PERISKOPE-TB. 
 - If you use code from this repository, please cite our paper as a condition of use.
 
@@ -22,13 +22,13 @@ install.packages("lubridate")
 
 The repository includes:
 - `PERISKOPE-TB-replication.R` - the script to run the model
-- `fit_final_github_2020-08-14` - the `rstpm2` model object
 - `input_data.csv` - simulated dataset including 10 example patients
 - `input_data_dictionary.csv` - data dictionary for `input_data.csv`
 - `qfn_lookup` - look-up table to normalise quantitative Quantiferon results to a percentile scale
 - `tspot_lookup` - look-up table to normalise quantitative T-SPOT.TB results to a percentile scale
 - `tst_lookup` - look-up table to normalise quantitative tuberculin skin test results to a percentile scale
 - `TB_burden_countries_2020-08-14.csv` - [WHO TB burden estimates](https://www.who.int/tb/country/data/download/en/)
+- `fit_final_github_2020-08-14` - the `rstpm2` model object. NB: this model object was initially trained using simulated data. The parameters in the object were then replaced with the final PERISKOPE-TB model parameters.
 
 # Input data
 
