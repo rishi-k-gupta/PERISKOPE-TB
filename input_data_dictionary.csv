@@ -5,7 +5,7 @@ qfn_negative_control,Quantiferon negative control  (IU/mL),Numeric,0-20,One vali
 qfn_result,Quantiferon result,Factor with 3 levels,"Positive, Negative, Indeterminate",One valid quantitative or binary test result must be provided
 tspot_tbag_max,Maximum T-SPOT.TB antigen spot count (higher of Panel A and Panel B),Integer,0-400,One valid quantitative or binary test result must be provided
 tspot_negative_control,T.SPOT.TB negative control spot count,Integer,0-400,One valid quantitative or binary test result must be provided
-tspot_result,T-SPOT.TB result,Factor with 3 levels,"Positive, Borderline positive, Borderline negative, Negative, Indeterminate",One valid quantitative or binary test result must be provided
+tspot_result,T-SPOT.TB result,Factor with 5 levels,"Positive, Borderline positive, Borderline negative, Negative, Indeterminate",One valid quantitative or binary test result must be provided
 mantoux_result,Tuberculin skin test induration (mm),Integer,0-100,One valid quantitative or binary test result must be provided
 contact,Was the person tested through contact tracing?,Binary,"Yes, No",Yes
 indexcase_proximity,Proximity of index case,Factor,"Household, Non-Household",For contacts
