@@ -10,7 +10,7 @@ library(rstpm2)
 library(rms)
 library(lubridate)
 
-# Load required objects
+# Load required objects into working directory
 
 load("qfn_lookup") # QFT percentile look-up table
 load("tspot_lookup") # T=SPOT percentile look-up table
@@ -35,7 +35,7 @@ input_data <- read.csv("input_data.csv")
 input_data$qfn_tbag_nil <- input_data$qfn_tbag_max - input_data$qfn_negative_control
 input_data$tspot_max_diff <- input_data$tspot_tbag_max - input_data$tspot_negative_control
 
-### Replace inderminate IGRA results as missing, since these are not valid for entry into the model
+### Replace indeterminate IGRA results as missing, since these are not valid for entry into the model
 input_data$qfn_tbag_nil[input_data$qfn_result=="Indeterminate"] <- NA
 input_data$tspot_max_diff[input_data$tspot_result=="Indeterminate"] <- NA
 
@@ -49,7 +49,7 @@ input_data$pct_qfn <- qfn.lookup$pct_qfn[findInterval(input_data$qfn_tbag_nil, q
 input_data$pct_tspot <- tspot.lookup$pct_tspot[findInterval(input_data$tspot_max_diff, tspot.lookup$tspot.min)]
 input_data$pct_tst <- tst.lookup$pct_tst[findInterval(input_data$mantoux_result, tst.lookup$tst.min)]
 
-### Compostite percentile variable (uses QFT > TSPOT > TST)
+### Composite percentile variable (uses QFT > TSPOT > TST)
 ### If quantitative IGRA result is missing, this is imputed as the median for LTBI positive and negative groups, respectively
 input_data <- input_data %>% mutate(pct_testspl1 = case_when(!is.na(pct_qfn) ~ as.integer(pct_qfn),
                                                          !is.na(pct_tspot) ~ as.integer(pct_tspot),
