@@ -30,6 +30,8 @@ The repository includes:
 - `TB_burden_countries_2020-08-14.csv` - [WHO TB burden estimates](https://www.who.int/tb/country/data/download/en/)
 - `fit_final_github_2020-08-14` - the `rstpm2` model object. NB: this model object was initially trained using simulated data. The parameters in the object were then replaced with the final PERISKOPE-TB model parameters.
 
+The code will load the required objects from the list above into the working directory.
+
 # Input data
 
 The input dataset must include the following variables (as shown in the simulated `input_data.csv`):
