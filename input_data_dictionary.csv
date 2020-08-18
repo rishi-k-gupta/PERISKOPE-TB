@@ -1,0 +1,19 @@
+Variable,Description,Type,Levels / range,Required?
+age,Age (years),Numeric,0-80,Yes
+qfn_tbag_max,Maximum Quantiferon TB antigen response (higher of TB1 and TB2 tubes; IU/mL),Numeric,0-20,One valid quantitative or binary test result must be provided
+qfn_negative_control,Quantiferon negative control  (IU/mL),Numeric,0-20,One valid quantitative or binary test result must be provided
+qfn_result,Quantiferon result,Factor with 3 levels,"Positive, Negative, Indeterminate",One valid quantitative or binary test result must be provided
+tspot_tbag_max,Maximum T-SPOT.TB antigen spot count (higher of Panel A and Panel B),Integer,0-400,One valid quantitative or binary test result must be provided
+tspot_negative_control,T.SPOT.TB negative control spot count,Integer,0-400,One valid quantitative or binary test result must be provided
+tspot_result,T-SPOT.TB result,Factor with 5 levels,"Positive, Borderline positive, Borderline negative, Negative, Indeterminate",One valid quantitative or binary test result must be provided
+mantoux_result,Tuberculin skin test induration (mm),Integer,0-100,One valid quantitative or binary test result must be provided
+contact,Was the person tested through contact tracing?,Binary,"Yes, No",Yes
+indexcase_proximity,Proximity of index case,Factor,"Household, Non-Household",For contacts
+indexcase_sputumsmear,Sputum smear status of index case,Binary,"Positive, Negative",For contacts
+migrant,Was the person tested born abroad?,Binary,"Yes, No",For non-contacts
+country_of_birth,Country of birth,Factor,Formatted as per WHO TB burden dataset,For migrants
+date_of_entry,Approximate date of migration,Date (yyyy-mm-dd),0-15 years prior to test_date,For migrants
+hivpos,Is the person tested known to be living with HIV?,Binary,"Positive, Negative",Yes
+transplant,Has the person tested receieved a solid organ or haematological transplant?,Binary,"Yes, No",Yes
+ltbi_treatment,Preventative treatment commenced?,Binary,"Yes, No",Yes
+test_date,Date of latent TB test,Date (yyyy-mm-dd),N/A,Yes
